@@ -1,0 +1,6 @@
+<% @artists.each() do |artist| %>
+  <h1> <%= artist.name %> </h1>
+  <% artist.artistcds.each() do |cd| %>
+    <a href='/albums/<%=cd.id %>'> <h3><%= cd.title() %></h3> </a>
+  <% end %>
+<% end %>

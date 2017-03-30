@@ -13,8 +13,13 @@ get('/album/new') do
 end
 
 get('/albums') do
-  @cds = Cd.display
+  @cds = Cd.display()
   erb(:albums)
+end
+
+get('/artists') do
+  @artists = Artist.all()
+  erb(:artists)
 end
 
 post('/artists') do
