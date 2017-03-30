@@ -1,0 +1,7 @@
+<h1> <%= @album.title %> </h1>
+<form action='/artists' method='post'>
+  <label for="name">Add Artist</label>
+  <input name='name' id='name' type='text'>
+  <input name='id' id="id" value="<%= @album.id %>">
+  <button type='submit'>Add Artist</button>
+</form>
